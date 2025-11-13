@@ -1,6 +1,6 @@
 # Documentation Index
 
-**Last Updated:** 2025-11-13 23:55 AEDT
+**Last Updated:** 2025-11-14 00:05 AEDT
 
 This index tracks all documentation in the repository organized by category.
 
@@ -49,6 +49,9 @@ This index tracks all documentation in the repository organized by category.
 
 ## Reference Materials (docs/reference/)
 
+**Gemini Capabilities:**
+- [gemini_capabilities.md](reference/gemini_capabilities.md) - Active - **AUTHORITATIVE** Architecture, 12 tested techniques, API parameters (696 lines)
+
 **Source Materials Archive** (docs/reference/source_materials/)
 - [README.md](reference/source_materials/README.md) - Reference - Explains archived materials and their relationship to adapted content (209 lines)
 - [01_PRINCIPLES.md](reference/source_materials/01_PRINCIPLES.md) - Reference - Original meta-learnings (370 lines)
@@ -60,8 +63,7 @@ This index tracks all documentation in the repository organized by category.
 **Note:** Source materials are read-only archives. Use adapted versions in docs/methodology/ for active work.
 
 **Pending:**
-- gemini_capabilities.md - Architecture, tested techniques, API features
-- technique_library.md - All 17 techniques with examples
+- technique_library.md - All 17 techniques with examples and compatibility matrix
 
 ---
 
