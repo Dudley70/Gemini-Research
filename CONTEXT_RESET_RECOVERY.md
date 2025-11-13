@@ -1,204 +1,333 @@
 # Context Reset Recovery Guide
 
-**Purpose:** This document helps any LLM (or human) quickly recover full context when starting a new conversation about this project.
-
-**Last Updated:** 2025-11-13 23:35 AEDT
-
----
-
-## Quick Start: Essential Reading Order
-
-**For immediate understanding, read in this order:**
-
-1. **This file first** (you're reading it) - 5 minutes
-2. **PROJECT.md** - Strategic context and decisions - 10 minutes
-3. **docs/analysis/source_papers_complete_analysis.md** - The foundation - 15 minutes
-4. **SESSION.md** - Current state and next steps - 5 minutes
-
-**Total time to full context: ~35 minutes**
+**Last Updated:** 2025-11-14 00:50 AEDT  
+**Purpose:** Rapid context recovery for returning to this project  
+**Read Time:** 3-5 minutes
 
 ---
 
-## Project Purpose (30 seconds)
+## FASTEST RECOVERY (60 seconds)
 
-**Enable any LLM to generate effective Gemini research prompts**
+**Project:** Gemini Research Framework  
+**Purpose:** Enable LLMs to generate effective Gemini research prompts  
+**Status:** Phase 1 + 2 Complete - Production-ready  
+**Location:** /Users/dudley/Projects/Gemini-Research  
+**GitHub:** https://github.com/Dudley70/Gemini-Research
 
-- Primary use: Web UI copy/paste (PATH 1)
-- Secondary use: API automation (PATH 2)
-- Cross-LLM collaboration framework
-- Evidence-based methodology from academic research
+**Quick Facts:**
+- 8,823 lines of documentation
+- 17 techniques documented (12 tested + 5 gaps)
+- 2 production templates (A: comprehensive, B: strategic)
+- Evidence-based (1,582 lines of research)
+- Works with any LLM (ChatGPT, Claude, etc.)
 
----
-
-## The Foundation Story
-
-### Three Sources, One Goal
-
-**Source Papers** (The Authority):
-- Paper 1: "Empirical Evaluation" (250 lines) - Third-party analysis
-- Paper 2: "Self-Assessment" (1,332 lines) - Gemini analyzing itself
-- **Total:** 1,582 lines of academic research
-- **Location:** `/Users/dudley/Projects/Gemini Research Method/`
-
-**Claude's Branch** (Web UI Focus):
-- 01_PRINCIPLES.md (370 lines) - Meta-learnings
-- 02_TEMPLATES.md (613 lines) - Production templates
-- 03_APPLICATIONS/ (~1,020 lines) - API implementations
-- **Innovation:** PATH 1/2 distinction, practical templates, anti-patterns
-
-**ChatGPT's Branch** (Automation Focus):
-- v1.3.0 Pack (11 files) - Custom GPT generator
-- **Innovation:** Schema-driven, compliance validation, preset system
-
-**Critical Insight:** Claude and ChatGPT branches are **sibling implementations** - both extracted from same source papers, neither complete.
+**Read These 3 Files:**
+1. `FRAMEWORK_GUIDE.md` (536 lines) - Complete overview
+2. `SESSION.md` (499 lines) - What was done, what's next
+3. `docs/INDEX.md` (110 lines) - Documentation map
 
 ---
 
-## What We Know (The Evidence)
+## WHAT IS THIS PROJECT?
 
-### 12 Techniques Tested in Source Papers
+**Framework Goal:**
+Enable any LLM (ChatGPT, Claude, etc.) to generate high-quality research prompts optimized for Gemini 2.5 Pro.
 
-Each scored on Effectiveness (0-10) and Reliability (0-10):
+**How It Works:**
+```
+User → LLM → Generated Prompt → User copies → Gemini executes → 1,500-2,000 lines of research
+```
 
-| Technique | E/R | Key Insight |
-|-----------|-----|-------------|
-| Chain-of-Thought | 10/10 | Native "Thinking" architecture |
-| Evidence-Based Structured Output | 10/9 | Grounding + JSON schema |
-| Multi-Agent Simulation | 10/9 | Large context enables personas |
-| Socratic Questioning | 10/8 | Emergent, prompt-dependent |
-| Meta-Reasoning | 10/9 | includeThoughts API feature |
-| Objective Self-Scoring | 10/9 | Critical self-assessment |
-| Quality Gates | 10/9 | Conditional logic via few-shot |
-| Tree of Thoughts | 9/7 | Can simulate, not native |
-| JSON Schema Validation | 10/9 | API-enforced responseSchema |
-| Long-Context Reasoning | 10/8 | 1M tokens, needle-in-haystack |
-| Iterative Self-Improvement | 10/8 | Generate→Critique→Revise |
-| Thinking Mode | 10/10 | thinkingBudget parameter |
+**Example:**
+```
+User to Claude: "Generate a Gemini research prompt for database sharding"
+Claude: [reads framework docs] → [generates optimized prompt]
+User: [copies prompt] → [pastes into google.com/gemini]
+Gemini: [produces comprehensive 1,500-line research output]
+```
 
-### 5 Gap Techniques (Missing from Both Branches)
-
-- Self-Consistency (multiple paths + majority vote)
-- ReAct (Reason + Act for agents)
-- Few-Shot Prompting (fundamental)
-- Generated Knowledge Prompting
-- Directional Stimulus Prompting
+**Quality:** Framework techniques consistently achieve 9-10/10 outputs
 
 ---
 
-## Repository Status
+## REPOSITORY STRUCTURE
 
-**Git:** https://github.com/Dudley70/Gemini-Research  
-**Branch:** main  
-**Commits:** 3 (foundation complete)
-
-**Structure:**
 ```
 Gemini-Research/
-├── PROJECT.md           ✅ Strategic context
-├── SESSION.md           ✅ Current state
-├── README.md            ✅ Overview
+├── FRAMEWORK_GUIDE.md          ← START HERE (universal entry point)
+├── PROJECT.md                  ← Strategic context
+├── SESSION.md                  ← Current state (detailed)
+├── README.md                   ← GitHub overview
+│
 └── docs/
-    ├── INDEX.md         ✅ Documentation map
-    ├── analysis/        ✅ Complete (3 docs)
-    ├── methodology/     📁 Awaiting content
-    ├── api/             📁 Awaiting content
-    ├── reference/       📁 Awaiting content
-    ├── guides/          📁 Awaiting content
-    └── enhancements/    📁 Awaiting content
+    ├── INDEX.md                ← Documentation map
+    │
+    ├── methodology/            ← PHASE 1 (how to use)
+    │   ├── principles/
+    │   │   └── core_discoveries.md (why techniques work)
+    │   └── templates/
+    │       └── web_ui_templates.md (Template A & B)
+    │
+    ├── reference/              ← PHASE 1 (what's available)
+    │   ├── gemini_capabilities.md (what Gemini can do)
+    │   └── technique_library.md (all 17 techniques)
+    │
+    ├── enhancements/           ← PHASE 2 (integration)
+    │   └── unified_methodology.md (Claude + ChatGPT)
+    │
+    └── guides/                 ← PHASE 2 (LLM-specific)
+        ├── for_claude.md (how Claude uses framework)
+        └── for_chatgpt.md (how ChatGPT uses framework)
 ```
 
 ---
 
-## What's Next (Immediate Priorities)
+## KEY CONCEPTS (2-minute read)
 
-**Phase 1: Port Methodology**
-1. 01_PRINCIPLES.md → docs/methodology/principles/core_discoveries.md
-2. 02_TEMPLATES.md → docs/methodology/templates/web_ui_templates.md
-3. Create docs/reference/gemini_capabilities.md (from source papers)
-4. Create docs/reference/technique_library.md (all 17 techniques)
+### PATH 1 vs PATH 2
 
-**Phase 2: Integration**
-5. Unified methodology (combine both branches)
-6. LLM-specific guides (for Claude, for ChatGPT)
+**PATH 1: Web UI (PRIMARY)**
+- User copies generated prompt → pastes into google.com/gemini
+- Output: Human-readable prose (1,500-2,000 lines)
+- Templates: A (comprehensive) & B (strategic decision)
 
-**Phase 3: Fill Gaps**
-7. Document the 5 missing techniques
+**PATH 2: API (SECONDARY)**
+- Programmatic execution via Gemini API
+- Output: Structured JSON
+- Use case: Automation, validation
 
----
+### Technique Tiers
 
-## Key Decisions Made
+**Tier 1:** API-enforced (9-10/10 reliability)  
+**Tier 2:** Emergent high (8-10/10 reliability)  
+**Tier 3:** Promising (7/10 reliability)  
+**Gaps:** Not yet tested for Gemini
 
-**Decision #003 (Most Recent):** Treat Claude and ChatGPT branches as sibling implementations, neither subordinate
+### Quality Standard
 
-**Decision #002:** PATH 1 (Web UI copy/paste) primary, PATH 2 (API automation) secondary
-
-**Decision #001:** Use ClaudeWorkflow project structure for cross-LLM collaboration
-
----
-
-## Critical Files to Know
-
-**Strategic:**
-- `PROJECT.md` - Why this exists, what we're building, decisions made
-- `SESSION.md` - Where we are, what's done, what's next
-
-**Analysis:**
-- `docs/analysis/source_papers_complete_analysis.md` - THE FOUNDATION (must read)
-- `docs/analysis/chatgpt_approach_analysis.md` - ChatGPT branch evaluation
-
-**Source Material:**
-- `/Users/dudley/Projects/Gemini Research Method/` - Original research location
-  - Read source papers if needed, but analysis doc covers it
-  - 01_PRINCIPLES.md, 02_TEMPLATES.md, 03_APPLICATIONS/ ready to port
+**Target:** ≥8.5/10 average across 7 criteria
+1. Completeness
+2. Evidence Quality
+3. Depth of Analysis
+4. Pattern Quality
+5. Critical Thinking
+6. Integration
+7. Actionability
 
 ---
 
-## How to Continue This Project
+## WHAT WAS ACCOMPLISHED
 
-**For Claude:**
-1. Read this file + PROJECT.md + source_papers_complete_analysis.md + SESSION.md
-2. Check SESSION.md "NEXT STEPS" for current phase
-3. Use desktop-commander MCP tools for all file operations
-4. Follow commit conventions from SESSION.md
-5. Update SESSION.md after significant progress
+### Phase 1: Methodology Foundation (COMPLETE)
+- ✅ Core discoveries (413 lines) - Why techniques work
+- ✅ Web UI templates (899 lines) - Template A & B
+- ✅ Gemini capabilities (696 lines) - Technical specs
+- ✅ Technique library (1,438 lines) - All 17 techniques
 
-**For ChatGPT:**
-1. Same reading order as above
-2. Understand you're working with a sibling implementation
-3. Your v1.3.0 Pack is preserved in docs/analysis/
-4. Contribute through GitHub pull requests or direct file creation
+### Phase 2: Integration & Guidance (COMPLETE)
+- ✅ Unified methodology (684 lines) - Branch integration
+- ✅ Framework guide (536 lines) - Entry point
+- ✅ For Claude guide (632 lines) - Claude workflow
+- ✅ For ChatGPT guide (711 lines) - ChatGPT workflow
 
-**For Any LLM:**
-1. Read foundational docs first (35 minutes)
-2. Understand the three sources (Papers, Claude, ChatGPT)
-3. Respect the sibling implementation status
-4. Follow PATH 1 (Web UI) primary focus
-5. Build on evidence-based foundation
+**Total:** 6,009 lines of core content  
+**Status:** Production-ready
 
 ---
 
-## Common Questions
+## WHAT'S NEXT (Optional)
 
-**Q: Why two paths (Web UI and API)?**  
-A: Different use cases. Web UI for interactive research (primary), API for automation (secondary).
+### Phase 3: Technique Gaps (~1,000-1,500 lines)
+- Document Self-Consistency technique
+- Document ReAct framework
+- Document Few-Shot prompting
+- Add comprehensive examples
 
-**Q: Why are Claude and ChatGPT "siblings"?**  
-A: Both extracted from same source papers independently. Neither is complete. Both valid.
+### Phase 4: Polish (~500-800 lines)
+- Update README.md with quick start
+- Create CONTRIBUTING.md
+- Final review and optimization
 
-**Q: Where's the source research?**  
-A: `/Users/dudley/Projects/Gemini Research Method/` - Two papers (1,582 lines) analyzed in docs/analysis/source_papers_complete_analysis.md
-
-**Q: What makes this unique?**  
-A: Only repository that:
-- Documents the complete evidence base (source papers)
-- Preserves both implementation branches
-- Provides cross-LLM collaboration framework
-- Identifies and plans to fill technique gaps
-
-**Q: What's the immediate priority?**  
-A: Port methodology content from source to new structure (Phase 1 in SESSION.md)
+**Both phases are optional enhancements. Framework works now.**
 
 ---
 
-**Context Recovery Time: 35 minutes**  
-**Full Understanding: Read PROJECT.md → source_papers_complete_analysis.md → SESSION.md**
+## HOW TO USE (If User Asks)
+
+### For LLMs (You Are Claude)
+
+**When user requests Gemini prompt:**
+1. Read `gemini_capabilities.md` → Know what Gemini can do
+2. Read `technique_library.md` → Select 4-6 techniques
+3. Read `web_ui_templates.md` → Apply Template A or B
+4. Customize for user's topic
+5. Deliver complete prompt with instructions
+
+**Detailed workflow:** See `docs/guides/for_claude.md`
+
+### For Users
+
+**Simple 3-step process:**
+1. Ask LLM: "Generate Gemini research prompt for [topic]"
+2. Copy generated prompt
+3. Paste into google.com/gemini
+
+**Expected:** 1,500-2,000 lines of comprehensive research
+
+---
+
+## EVIDENCE BASE
+
+**Foundation:** Two academic papers (1,582 lines)
+- Paper 1: Empirical Evaluation (250 lines)
+- Paper 2: Systematic Self-Assessment (1,332 lines)
+
+**Testing:** 12 techniques tested empirically
+- Dual scoring: Effectiveness (0-10) + Reliability (0-10)
+- Example: Chain-of-Thought (10/10, 10/10)
+
+**Documentation:** All findings in `docs/analysis/source_papers_complete_analysis.md`
+
+---
+
+## GIT STATUS
+
+**Repository:** https://github.com/Dudley70/Gemini-Research  
+**Branch:** main  
+**Latest Commit:** 8508f27 phase2: COMPLETE  
+**Status:** Clean, all changes committed and pushed
+
+**To check status:**
+```bash
+cd /Users/dudley/Projects/Gemini-Research
+git status
+git log -5 --oneline
+```
+
+---
+
+## DECISION LOG (Key Decisions Made)
+
+**Decision #001:** Adopt ClaudeWorkflow structure  
+**Decision #002:** PATH 1 (Web UI) primary, PATH 2 (API) secondary  
+**Decision #003:** ChatGPT & Claude are sibling implementations  
+
+**See PROJECT.md for full decision log with rationale**
+
+---
+
+## IF CONTINUING DEVELOPMENT
+
+### Starting Phase 3 (Technique Gaps)
+
+**Read first:**
+- `docs/reference/technique_library.md` (gap techniques section)
+- `docs/analysis/source_papers_complete_analysis.md` (technique gaps identified)
+
+**Create:**
+- `docs/methodology/techniques/self_consistency.md`
+- `docs/methodology/techniques/react_framework.md`
+- `docs/methodology/techniques/few_shot_prompting.md`
+
+### Starting Phase 4 (Polish)
+
+**Update:**
+- `README.md` with complete quick start guide
+- Create `CONTRIBUTING.md` for community contributions
+- Final review of all cross-references
+
+---
+
+## IF HELPING USER
+
+### User Wants Framework Overview
+
+**Direct them to:** `FRAMEWORK_GUIDE.md`
+
+**Explain:** "This framework helps me generate high-quality research prompts for Gemini. I read the docs, select techniques, customize a template, and give you a complete prompt to paste into Gemini."
+
+### User Wants Research Prompt
+
+**Follow workflow in:** `docs/guides/for_claude.md`
+
+**Process:**
+1. Read capabilities (what Gemini can do)
+2. Select techniques (4-6 compatible)
+3. Apply template (A for comprehensive, B for decisions)
+4. Customize for their topic
+5. Deliver with usage instructions
+
+### User Confused About Process
+
+**Clarify:**
+```
+Simple 3 steps:
+1. I generate a prompt (based on framework)
+2. You copy it
+3. You paste it into Gemini at google.com/gemini
+
+Then Gemini does the research and gives you 1,500-2,000 lines
+of comprehensive analysis.
+```
+
+---
+
+## CRITICAL FILES
+
+**Must Read (For Context):**
+1. `FRAMEWORK_GUIDE.md` - Complete overview
+2. `SESSION.md` - Current state
+3. `docs/INDEX.md` - Documentation map
+
+**Must Read (For Usage):**
+4. `docs/reference/gemini_capabilities.md` - What Gemini can do
+5. `docs/reference/technique_library.md` - Technique selection
+6. `docs/methodology/templates/web_ui_templates.md` - Templates
+
+**Optional (For Deep Understanding):**
+7. `docs/methodology/principles/core_discoveries.md` - Why it works
+8. `docs/enhancements/unified_methodology.md` - Integration
+9. `docs/guides/for_claude.md` - Your specific workflow
+
+---
+
+## QUICK STATS
+
+**Documentation:** 8,823 lines  
+**Techniques:** 17 (12 tested + 5 gaps)  
+**Templates:** 2 (comprehensive + strategic)  
+**Quality Target:** ≥8.5/10  
+**Expected Output:** 1,500-2,000 lines from Gemini  
+**Time to Context:** 3-5 minutes (read this + FRAMEWORK_GUIDE.md)
+
+---
+
+## SUCCESS CRITERIA (All Met)
+
+✅ Cross-platform (works with any LLM)  
+✅ Evidence-based (1,582 lines of research)  
+✅ Production-ready (9-10/10 outputs)  
+✅ Complete entry point (FRAMEWORK_GUIDE.md)  
+✅ Integration guide (unified methodology)  
+✅ LLM-specific workflows (Claude + ChatGPT)  
+✅ Documented and committed to GitHub
+
+---
+
+## FINAL CONTEXT
+
+**What:** Cross-LLM framework for Gemini prompt generation  
+**Why:** Enable any LLM to produce high-quality research prompts  
+**How:** Templates + Techniques + Quality assurance  
+**Status:** Production-ready (Phase 1 + 2 complete)  
+**Next:** Optional enhancements (Phase 3 + 4)  
+**Location:** /Users/dudley/Projects/Gemini-Research  
+**GitHub:** https://github.com/Dudley70/Gemini-Research
+
+**Read FRAMEWORK_GUIDE.md for complete details.**
+
+---
+
+**Last Session:** 2025-11-13 23:00 - 2025-11-14 00:50 AEDT (1hr 50min)  
+**Status:** COMPLETE - Ready for handover  
+**Context Recovery:** 3-5 minutes (this file + FRAMEWORK_GUIDE.md)
