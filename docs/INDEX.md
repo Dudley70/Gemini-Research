@@ -1,6 +1,6 @@
 # Documentation Index
 
-**Last Updated:** 2025-11-13 23:40 AEDT
+**Last Updated:** 2025-11-13 23:50 AEDT
 
 This index tracks all documentation in the repository organized by category.
 
@@ -23,7 +23,7 @@ This index tracks all documentation in the repository organized by category.
 - [core_discoveries.md](methodology/principles/core_discoveries.md) - Active - **ESSENTIAL** Proven techniques with evidence (413 lines)
 
 **Templates** (docs/methodology/templates/)
-- Status: Next priority for porting
+- [web_ui_templates.md](methodology/templates/web_ui_templates.md) - Active - **PRODUCTION** Template A (Comprehensive) + Template B (Strategic Decision) (899 lines)
 
 **Patterns** (docs/methodology/patterns/)
 - Status: To be extracted from templates
