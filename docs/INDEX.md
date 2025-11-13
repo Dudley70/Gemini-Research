@@ -1,6 +1,6 @@
 # Documentation Index
 
-**Last Updated:** 2025-11-14 00:30 AEDT
+**Last Updated:** 2025-11-14 00:45 AEDT
 
 This index tracks all documentation in the repository organized by category.
 
@@ -74,10 +74,8 @@ This index tracks all documentation in the repository organized by category.
 
 ## Guides (docs/guides/)
 
-- Status: Phase 2 in progress
-- Pending:
-  - for_claude.md - How Claude should use this framework
-  - for_chatgpt.md - How ChatGPT should use this framework
+- [for_claude.md](guides/for_claude.md) - Active - **CLAUDE GUIDE** How Claude should use this framework (632 lines)
+- [for_chatgpt.md](guides/for_chatgpt.md) - Active - **CHATGPT GUIDE** How ChatGPT should use this framework (711 lines)
 
 ---
 
@@ -97,11 +95,12 @@ This index tracks all documentation in the repository organized by category.
 - **Pending** - Planned, not yet created
 
 **Recommended Reading Order for LLMs:**
-1. FRAMEWORK_GUIDE.md (overview)
-2. gemini_capabilities.md (what Gemini can do)
-3. technique_library.md (technique selection)
-4. web_ui_templates.md (apply templates)
-5. unified_methodology.md (integration strategies)
+1. **FRAMEWORK_GUIDE.md** (overview - start here)
+2. **gemini_capabilities.md** (what Gemini can do)
+3. **technique_library.md** (technique selection)
+4. **web_ui_templates.md** (apply templates)
+5. **for_claude.md or for_chatgpt.md** (LLM-specific guidance)
+6. **unified_methodology.md** (integration strategies - advanced)
 
 **Workflow:**
 1. Create new document in appropriate category
