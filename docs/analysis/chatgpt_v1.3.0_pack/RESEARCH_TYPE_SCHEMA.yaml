@@ -1,0 +1,225 @@
+version: 1.3.0
+last_updated: 2025-11-12
+research_types:
+  - id: REGULATORY_EXTRACTION
+    goal: "Extract rules from authoritative sources and produce implementable logic with citations."
+    phase1_topics:
+      - {id: sources_and_scope, title: "Sources & Scope of Regulation"}
+      - {id: definitions_and_terms, title: "Definitions & Key Terms"}
+      - {id: eligibility_and_conditions, title: "Eligibility & Conditions"}
+      - {id: calculations, title: "Calculations & Rates"}
+      - {id: exceptions_and_edge_cases, title: "Exceptions & Edge Cases"}
+      - {id: recordkeeping, title: "Record-Keeping & Evidence"}
+      - {id: validation, title: "Validation & Test Cases"}
+      - {id: change_log, title: "Change-Log & Monitoring"}
+    socratic:
+      stage1:
+        - "What are the primary legal sources and hierarchy?"
+        - "Where do authorities conflict and how are conflicts resolved?"
+        - "What assumptions replaced explicit law?"
+      stage2:
+        - "Taxpayer/Client: Is the interpretation practical and compliant?"
+        - "Advisor: Would I sign off on this position?"
+        - "Developer: Can I code this from the spec?"
+      stage3:
+        - "Underspecified provisions?"
+        - "Ambiguities requiring examples?"
+        - "Monitoring requirements for updates?"
+    scoring_criteria:
+      - {id: sourcing_fidelity, name: "Sourcing Fidelity"}
+      - {id: formula_clarity, name: "Formula Clarity"}
+      - {id: completeness, name: "Completeness"}
+      - {id: validation_rules, name: "Validation Rules"}
+      - {id: test_cases, name: "Test Cases"}
+      - {id: implementability, name: "Implementability"}
+      - {id: critical_thinking, name: "Critical Thinking"}
+    quality_gates_ref: ["GATE_0_PREFLIGHT", "GATE_CRITICAL", "GATE_TARGETED", "GATE_EXCELLENCE"]
+    outputs:
+      - "Implementable ruleset with examples"
+      - "Citation map"
+
+  - id: ARCHITECTURE_DESIGN
+    goal: "Design schemas, IO contracts, and constraints for durable data models."
+    phase1_topics:
+      - {id: entities, title: "Entities & Relationships"}
+      - {id: fields, title: "Fields, Types & Units"}
+      - {id: constraints, title: "Constraints & Invariants"}
+      - {id: io_contracts, title: "Inputs/Outputs & APIs"}
+      - {id: events, title: "Events & Timelines"}
+      - {id: validation, title: "Validation Rules"}
+      - {id: examples, title: "Examples & Snapshots"}
+      - {id: migration, title: "Migration & Back-compat"}
+    socratic:
+      stage1:
+        - "Does the schema cover all known use-cases?"
+        - "Are field types and units unambiguous?"
+        - "Do constraints prevent invalid states?"
+      stage2:
+        - "User: Is the model ergonomic and minimal?"
+        - "Engineer: Can I implement without clarification?"
+        - "Data: Are lineage and provenance preserved?"
+      stage3:
+        - "Missing entities/relations?"
+        - "Temporal or ownership ambiguities?"
+        - "Versioning and migration gaps?"
+    scoring_criteria:
+      - {id: completeness, name: "Completeness"}
+      - {id: validity, name: "Schema Validity"}
+      - {id: implementability, name: "Implementability"}
+      - {id: examples, name: "Examples"}
+      - {id: validation_rules, name: "Validation Rules"}
+      - {id: critical_thinking, name: "Critical Thinking"}
+      - {id: integration, name: "Integration Readiness"}
+    quality_gates_ref: ["GATE_0_PREFLIGHT", "GATE_CRITICAL", "GATE_TARGETED", "GATE_EXCELLENCE"]
+    outputs:
+      - "Schemas & constraints"
+      - "API/IO contracts"
+
+  - id: DEVELOPMENT_CONSTRAINTS
+    goal: "Identify planning/build constraints and their impact on timelines, costs, and feasibility."
+    phase1_topics:
+      - {id: sources_and_regs, title: "Authorities, Codes & Sources"}
+      - {id: zoning_controls, title: "Zoning & Land-Use Controls"}
+      - {id: overlays, title: "Overlays, Heritage, Environmental"}
+      - {id: approvals, title: "Approvals, Pathways & Sequencing"}
+      - {id: timing_impacts, title: "Timing Impacts & Lead Times"}
+      - {id: cost_impacts, title: "Cost & Risk Impacts"}
+      - {id: validation, title: "Validation & Evidence"}
+      - {id: monitoring, title: "Change-Log & Monitoring"}
+    socratic:
+      stage1:
+        - "What are binding vs advisory constraints?"
+        - "What are the gating approvals and earliest dates?"
+        - "What facts are ambiguous or missing?"
+      stage2:
+        - "Developer/Planner: Is the path realistic?"
+        - "Investor: Are risks costed and buffered?"
+        - "Legal: Are citations/audits adequate?"
+      stage3:
+        - "Where do we need examples, diagrams, or timelines?"
+        - "What triggers re-evaluation?"
+    scoring_criteria:
+      - {id: completeness, name: "Completeness"}
+      - {id: evidentiary, name: "Evidentiary Support"}
+      - {id: feasibility, name: "Feasibility & Timing"}
+      - {id: risk, name: "Risk & Cost Impact"}
+      - {id: implementability, name: "Implementability"}
+      - {id: monitoring, name: "Monitoring"}
+    quality_gates_ref: ["GATE_0_PREFLIGHT","GATE_CRITICAL","GATE_TARGETED","GATE_EXCELLENCE"]
+    outputs:
+      - "Constraint dossier with timing/cost impacts"
+      - "Risk register"
+
+  - id: DEPENDENCY_MAPPING
+    goal: "Map data flows, timing, and dependencies into implementable cash/time models."
+    phase1_topics:
+      - {id: inflows, title: "Cash Inflows (Receipts)"}
+      - {id: outflows, title: "Cash Outflows (Expenses)"}
+      - {id: monthly_consolidation, title: "Monthly Consolidation Logic"}
+      - {id: buffers, title: "Buffer Calculations"}
+      - {id: liquidity, title: "Liquidity Metrics"}
+      - {id: serviceability, title: "Serviceability Metrics"}
+      - {id: construction, title: "Construction & Development Flows"}
+      - {id: sale, title: "Sale Flows & CGT Reserves"}
+    socratic:
+      stage1:
+        - "Have ALL flows been mapped to sources with timing?"
+        - "What happens when timing assumptions fail?"
+        - "Are formulas implementable (variables, units, order)?"
+        - "Where could dependency loops arise?"
+      stage2:
+        - "Investor: Will balances behave as projected monthly?"
+        - "Advisor: Do alerts/buffers activate early enough?"
+        - "Developer: Is this testable with unit boundaries?"
+      stage3:
+        - "Missing mappings or timing rules?"
+        - "Annual-vs-monthly conflicts?"
+        - "Explicit out-of-scope items needed?"
+    scoring_criteria:
+      - {id: completeness, name: "Completeness"}
+      - {id: formula_clarity, name: "Formula Clarity"}
+      - {id: integration_map, name: "Integration Mapping"}
+      - {id: examples, name: "Scenario Examples"}
+      - {id: validation_rules, name: "Validation Rules"}
+      - {id: implementability, name: "Implementability"}
+      - {id: critical_thinking, name: "Critical Thinking"}
+    quality_gates_ref: ["GATE_0_PREFLIGHT", "GATE_CRITICAL", "GATE_TARGETED", "GATE_EXCELLENCE"]
+    outputs:
+      - "Integration table (flows→sources→timing)"
+      - "Worked month/annual examples"
+
+  - id: INTEGRATION_SCENARIOS
+    goal: "Describe and validate end-to-end integrations across papers: dependency graphs, execution order, data flows, validation, and error handling."
+    phase1_topics:
+      - {id: calc_dependency_graph, title: "Calculation Dependency Graph"}
+      - {id: execution_sequence, title: "Execution Sequence (Order of Operations)"}
+      - {id: data_flow, title: "Data Flow Diagrams & Lineage"}
+      - {id: integration_validation, title: "Integration Validation Rules & Guards"}
+      - {id: error_handling, title: "Error Handling & Fallback Paths"}
+      - {id: temporal_alignment, title: "Temporal Alignment (Accrual↔Cash, Contract↔Settlement)"}
+      - {id: io_contracts, title: "Cross-Paper IO Contracts & Interfaces"}
+      - {id: recalc_triggers, title: "Recalc Triggers, Monitoring & Alerts"}
+    socratic:
+      stage1:
+        - "Are all cross-paper inputs/outputs enumerated with timings and units?"
+        - "Does the execution order eliminate circularity deterministically (e.g., t−1)?"
+        - "Do validation rules prevent illegal states before compute steps?"
+        - "Are fallbacks specified for missing or late dependencies?"
+      stage2:
+        - "Investor: Does monthly cash reflect annual tax timing (PAYG vs refund)?"
+        - "Advisor: Would I sign off on compliance-critical handoffs?"
+        - "Developer: Can I implement this without guessing field names or order?"
+      stage3:
+        - "Any unmapped flows, race conditions, or annual↔monthly conflicts?"
+        - "Where do we require examples, thresholds, or test hooks?"
+        - "What should be monitored to catch integration drift?"
+    scoring_criteria:
+      - {id: completeness, name: "Completeness"}
+      - {id: dependency_clarity, name: "Dependency & Order Clarity"}
+      - {id: integration_map, name: "Integration Mapping Quality"}
+      - {id: validation_rules, name: "Guards & Validation Strength"}
+      - {id: implementability, name: "Implementability (schemas, IO, units)"}
+      - {id: examples, name: "Examples & Edge-Case Coverage"}
+      - {id: critical_thinking, name: "Critical Thinking & Loop Handling"}
+    quality_gates_ref: ["GATE_0_PREFLIGHT", "GATE_CRITICAL", "GATE_TARGETED", "GATE_EXCELLENCE"]
+    outputs:
+      - "End-to-end integration spec with dependency graph & sequence"
+      - "Validation & error-handling matrix with actions"
+      - "IO Contracts table (schema enforced)"
+      - "Compliance Report JSON"
+
+  - id: QUALITY_ASSURANCE
+    goal: "Define deterministic tests, fixtures, and monitoring to validate computations and guard against regressions."
+    phase1_topics:
+      - {id: scope, title: "Scope & Test Oracles"}
+      - {id: fixtures, title: "Deterministic Fixtures & Seeds"}
+      - {id: unit_tests, title: "Unit & Property-based Tests"}
+      - {id: integration_tests, title: "Integration & End-to-End Tests"}
+      - {id: metrics, title: "Coverage & Quality Metrics"}
+      - {id: monitoring, title: "Runtime Monitoring & Alerts"}
+      - {id: regression, title: "Regression & Change-Impact"}
+      - {id: release, title: "Release Gates & Sign-off"}
+    socratic:
+      stage1:
+        - "What are the oracles and acceptable tolerances?"
+        - "How do we guarantee repeatability?"
+        - "Which invariants must always hold?"
+      stage2:
+        - "Ops: What fails loudly vs silently?"
+        - "Dev: What is the quickest red/green loop?"
+        - "Owner: What metrics define quality?"
+      stage3:
+        - "Where are blind spots?"
+        - "What triggers new tests?"
+    scoring_criteria:
+      - {id: determinism, name: "Determinism & Repeatability"}
+      - {id: coverage, name: "Coverage & Depth"}
+      - {id: monitoring, name: "Monitoring & Alerting"}
+      - {id: practicality, name: "Practicality & Speed"}
+      - {id: documentation, name: "Documentation & Clarity"}
+      - {id: risk, name: "Risk Reduction"}
+      - {id: critical_thinking, name: "Critical Thinking"}
+    quality_gates_ref: ["GATE_0_PREFLIGHT","GATE_CRITICAL","GATE_TARGETED","GATE_EXCELLENCE"]
+    outputs:
+      - "Test plan with fixtures"
+      - "Monitoring hooks & gates"

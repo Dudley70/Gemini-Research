@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt Compliance Report",
+  "type": "object",
+  "properties": {
+    "gate0_passed": {
+      "type": "boolean"
+    },
+    "global_order_declared": {
+      "type": "boolean"
+    },
+    "t_minus_1_rule_declared": {
+      "type": "boolean"
+    },
+    "io_contracts_present": {
+      "type": "boolean"
+    },
+    "validation_matrix_present": {
+      "type": "boolean"
+    },
+    "error_matrix_present": {
+      "type": "boolean"
+    },
+    "worked_examples_present": {
+      "type": "boolean"
+    },
+    "avg_score": {
+      "type": "number"
+    },
+    "all_criteria_ge_7_5": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "gate0_passed",
+    "global_order_declared",
+    "io_contracts_present",
+    "validation_matrix_present",
+    "error_matrix_present"
+  ]
+}

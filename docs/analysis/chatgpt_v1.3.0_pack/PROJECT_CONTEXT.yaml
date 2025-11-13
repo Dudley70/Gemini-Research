@@ -1,0 +1,17 @@
+project_name: PropTaxCalc
+domain: "AU property tax & cashflow modelling"
+currency: "AUD"
+fiscal_calendar: "1 July – 30 June"
+thresholds:
+  lvr_max: 0.60
+  liquidity_min: 0.15
+  liquidity_strong: 0.25
+  buffer_months_expense: 12
+  buffer_months_living: 6
+  dscr_min: 1.25
+  icr_min: 2.0
+defaults:
+  thinking_budget: "Maximum"
+  expected_output: "2000–3000 lines of detailed specifications"
+  success_min_avg: 8.5
+  success_min_each: 7.5

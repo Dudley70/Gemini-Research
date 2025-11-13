@@ -1,0 +1,16 @@
+meta_framework:
+  - RESEARCH_FRAME_GUIDE.md
+  - RESEARCH_TYPE_SCHEMA.yaml
+  - PAPER_PROMPT_BLUEPRINT.md
+  - STYLE_AND_SCORING_GUIDE.md
+optional_libraries:
+  - SOCRATIC_QUESTION_LIBRARY.md
+  - QUALITY_GATES_LIBRARY.md
+project_context:
+  - PROJECT_CONTEXT.yaml
+runner_instructions: |
+  1) Load framework + libraries.
+  2) Load project_context thresholds.
+  3) Select research_type; read schema.
+  4) Populate blueprint placeholders.
+  5) Enforce Gate 0; append Compliance Report JSON.
