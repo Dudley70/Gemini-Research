@@ -1,17 +1,18 @@
 # Documentation Index
 
-**Last Updated:** 2025-11-14 00:15 AEDT
+**Last Updated:** 2025-11-14 00:30 AEDT
 
 This index tracks all documentation in the repository organized by category.
 
 ---
 
-## Root Documents
+## Entry Points
 
+- [FRAMEWORK_GUIDE.md](../FRAMEWORK_GUIDE.md) - Active - **START HERE FOR LLMs** Complete framework overview and usage guide (536 lines)
 - [PROJECT.md](../PROJECT.md) - Active - Strategic context, 3 decisions, complete principles
 - [SESSION.md](../SESSION.md) - Active - Current state, next steps, technical notes
 - [README.md](../README.md) - Active - Repository overview for GitHub
-- [CONTEXT_RESET_RECOVERY.md](../CONTEXT_RESET_RECOVERY.md) - Active - **START HERE** for quick context recovery (205 lines)
+- [CONTEXT_RESET_RECOVERY.md](../CONTEXT_RESET_RECOVERY.md) - Active - Quick context recovery (205 lines)
 
 ---
 
@@ -65,10 +66,18 @@ This index tracks all documentation in the repository organized by category.
 
 ---
 
+## Integration & Enhancement (docs/enhancements/)
+
+- [unified_methodology.md](enhancements/unified_methodology.md) - Active - **INTEGRATION** How Claude + ChatGPT branches complement each other (684 lines)
+
+---
+
 ## Guides (docs/guides/)
 
-- Status: To be created
-- Purpose: LLM-specific how-to guides
+- Status: Phase 2 in progress
+- Pending:
+  - for_claude.md - How Claude should use this framework
+  - for_chatgpt.md - How ChatGPT should use this framework
 
 ---
 
@@ -80,19 +89,19 @@ This index tracks all documentation in the repository organized by category.
 
 ---
 
-## Enhancements (docs/enhancements/)
-
-- Status: To be created
-- Purpose: Proposed improvements, experimental features
-
----
-
 ## Notes
 
 **Document Status:**
 - **Active** - Current, maintained document
 - **Reference** - Historical, archived, or comparative material (read-only)
 - **Pending** - Planned, not yet created
+
+**Recommended Reading Order for LLMs:**
+1. FRAMEWORK_GUIDE.md (overview)
+2. gemini_capabilities.md (what Gemini can do)
+3. technique_library.md (technique selection)
+4. web_ui_templates.md (apply templates)
+5. unified_methodology.md (integration strategies)
 
 **Workflow:**
 1. Create new document in appropriate category
