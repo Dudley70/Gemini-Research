@@ -1,6 +1,6 @@
 # Documentation Index
 
-**Last Updated:** 2025-11-13 23:05 AEDT
+**Last Updated:** 2025-11-13 23:40 AEDT
 
 This index tracks all documentation in the repository organized by category.
 
@@ -20,13 +20,13 @@ This index tracks all documentation in the repository organized by category.
 ### Methodology (docs/methodology/)
 
 **Principles** (docs/methodology/principles/)
-- Status: Pending port from source
+- [core_discoveries.md](methodology/principles/core_discoveries.md) - Active - **ESSENTIAL** Proven techniques with evidence (413 lines)
 
 **Templates** (docs/methodology/templates/)
-- Status: Pending port from source
+- Status: Next priority for porting
 
 **Patterns** (docs/methodology/patterns/)
-- Status: To be extracted
+- Status: To be extracted from templates
 
 ---
 
@@ -76,7 +76,7 @@ This index tracks all documentation in the repository organized by category.
 **Document Status:**
 - **Active** - Current, maintained document
 - **Pending** - Planned, not yet created
-- **Archived** - Historical, moved to docs/archive/
+- **Reference** - Historical or comparative material
 
 **Workflow:**
 1. Create new document in appropriate category
