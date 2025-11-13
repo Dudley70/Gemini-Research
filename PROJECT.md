@@ -88,6 +88,23 @@ docs/
 
 ## Decision Log
 
+### Decision #003 - 2025-11-13 23:20 AEDT
+**Context:** Discovered ChatGPT v1.3.0 Pack and Claude's methodology are sibling implementations  
+**Decision:** Treat both as parallel branches from the same source papers, neither subordinate to the other  
+**Rationale:**  
+- Both derived from same empirical research (two source papers)
+- ChatGPT's branch: Custom GPT automation with template types
+- Claude's branch: Cross-LLM documentation with principles
+- Each captured different insights from source research
+- Source papers are the authoritative foundation
+
+**Impact:**  
+- Must review source papers directly
+- Reconcile both branches against source
+- Extract missed insights from either branch
+- Document as complementary implementations
+- Cross-pollinate innovations between branches
+
 ### Decision #002 - 2025-11-13 23:05 AEDT
 **Context:** Two distinct execution paths need clear separation  
 **Decision:** Framework primarily targets Web UI copy/paste (PATH 1), with API automation as secondary (PATH 2)  
@@ -162,28 +179,32 @@ docs/
 
 ## References
 
-**Source Repository:**  
+**Source Papers (Foundation for Everything):**
 - `/Users/dudley/Projects/Gemini Research Method/`
-- Complete methodology development history
-- Proven templates achieving 9-10/10 quality
-- Empirical findings from capability assessments
+  - Gemini Pro Prompting Capability Assessment.md (several thousand lines)
+  - Gemini Prompting Capability Self-Assessment.md (several thousand lines)
+- **Status:** Original empirical research, not yet fully reviewed
+- **Importance:** Both branches derived from these papers
 
-**Key Documents to Review:**
-
-**PATH 1 (Web UI) Focus:**
+**Branch 1: Claude's Documentation (Web UI Focus)**
 - README.md - Infrastructure overview and knowledge chain
 - 01_PRINCIPLES.md - Meta-learnings and proven techniques (370 lines)
 - 02_TEMPLATES.md - Production-ready Web UI templates (613 lines)
   - Template A: Comprehensive Foundation Research (1,500-2,000 lines)
   - Template B: Strategic Decision Research (500-800 lines)
+- 03_APPLICATIONS/ - API implementations (secondary)
 
-**PATH 2 (API) Reference:**
-- 03_APPLICATIONS/v4.8.1_api_prompt.md - JSON API implementation (331 lines)
-- 03_APPLICATIONS/quality_validator.py - Automated quality scoring (359 lines)
-- 03_APPLICATIONS/traceability_validator.py - Confidence validation (330 lines)
+**Branch 2: ChatGPT's Custom GPT (Automation Focus)**
+- `docs/analysis/chatgpt_v1.3.0_pack/` - Complete pack (11 files)
+- Added template types and research schemas
+- Custom GPT generator optimized for prompt automation
+- Project-specific configurations (PropTaxCalc example)
 
-**Background (Context Only):**
-- Source assessments (capability testing - for reference, not direct read)
+**Critical Understanding:**
+- Both branches derived from the same source papers
+- Neither has complete view - source papers are authoritative
+- Both branches should be reconciled against source
+- Each captured different insights from the research
 
 ---
 
