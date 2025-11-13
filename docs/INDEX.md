@@ -8,9 +8,10 @@ This index tracks all documentation in the repository organized by category.
 
 ## Root Documents
 
-- [PROJECT.md](../PROJECT.md) - Active - Strategic context and project principles
-- [SESSION.md](../SESSION.md) - Active - Current session state and progress
+- [PROJECT.md](../PROJECT.md) - Active - Strategic context, 3 decisions, complete principles
+- [SESSION.md](../SESSION.md) - Active - Current state, next steps, technical notes
 - [README.md](../README.md) - Active - Repository overview for GitHub
+- [CONTEXT_RESET_RECOVERY.md](../CONTEXT_RESET_RECOVERY.md) - Active - **START HERE** for quick context recovery (205 lines)
 
 ---
 
